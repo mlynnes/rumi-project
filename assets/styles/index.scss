@@ -1,2 +1,11 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  background-color: #a8f7e4;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+}
