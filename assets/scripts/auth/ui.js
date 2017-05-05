@@ -32,11 +32,25 @@ const changePasswordFailure = () => {
   console.log('error changing password')
 }
 
+const signOutSuccess = (success) => {
+  console.log('successful sign out')
+  $('#change-password').hide()
+  $('#sign-out').hide()
+  $('#sign-up').show()
+  $('#sign-in').show()
+}
+
+const signOutFailure = () => {
+  console.log('error signing out')
+}
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
   signInFailure,
   changePasswordSuccess,
-  changePasswordFailure
+  changePasswordFailure,
+  signOutSuccess,
+  signOutFailure
 }
